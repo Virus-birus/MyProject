@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Event Caltndar</title>
+        <link rel="stylesheet" href="/index.cs/index.css" />
+    </head>
+    <body>
+        <div class="Calendar">
+            <h4>Event Calendar</h4>
+            <div id="Calendar" class="Calendar-gridy"></div>
+        </div>
+
+        <button type="button" class="button" onclick="ShowModal()">Add event</button>
+
+        <div id="addTaskModal" class="ShowModal">
+            <div class="content">
+                <span onclick="CloseShowModal()" class="Close">&times;</span>
+                <h4">AddTask</h4><br>
+                <input type="date" id="task-dates" /><br>
+                <input type="text" class="inpute" id="task-desc" placeholder="text" /><br>
+                <button type="button" onclick="addTask()">addTask</button>
+            </div>
+        </div>
+
+        <script src="/index.j/index.js"></script>
+    </body>
+</html>
